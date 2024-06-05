@@ -1,0 +1,70 @@
+/* main.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo para o cabeçalho */
+.container, form, ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    gap: 10px;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    font-size: 25px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+input {
+    width: 250px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* Estilo para o formulário */
+form {
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: rgb(71, 71, 71);
+    color: #fff;
+}
+
+ul {
+    display: block;
+    list-style-position: inside;
+
+    text-align: left;
+    max-width: 460px;
+    margin: auto;
+}
+
+ul li {
+    margin: 8px;
+}
+
+ul li:hover {
+    cursor: pointer;
+}
+
+/* Estilo para tarefas concluídas */
+ul#taskList li.completed {
+    text-decoration: line-through;
+}
